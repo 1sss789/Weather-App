@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="containersqueeze" class="shadow p-3 mb-5 rounded">
+    <div id="Opening">
+        <h1 id="openingtext">Weather</h1>
+    </div>
+
+    <div class="weathertdy card my-card shadow p-3 mb-5 rounded">
+        <h1 class="weatherheads" id="weatherheadmain">Today's Weather</h1>
+        <h2 class="regulartext" id="carddate0">Jan 0</h2>
+        <h2 class="regulartext" id="cardweather0">13°C</h2> <!--weathertdymain-->
+        <img class="imgs" src="https://symbols.getvecta.com/stencil_211/42_sun-behind-cloud.1e88e4ec8a.png" alt="">
+        
+    </div>
+
+
+    <div id="containerweeks">
+        
+        <div class="weatherweekly card my-card shadow p-3 mb-5 rounded">
+            <h1 id="carddate1" class="weatherheads" >Jan 1</h1>
+            <h2 id="cardweather1" class="regulartext">13°C</h2>
+            <img class="imgs" src="
+            https://symbols.getvecta.com/stencil_211/42_sun-behind-cloud.1e88e4ec8a.png
+            " alt="">
+            
+        </div>
+
+        <div class="weatherweekly card my-card shadow p-3 mb-5 rounded">
+            <h1 id="carddate2" class="weatherheads">Jan 2</h1>
+            <h2 id="cardweather2" class="regulartext">13°C</h2>
+            <img class="imgs" src="https://symbols.getvecta.com/stencil_211/42_sun-behind-cloud.1e88e4ec8a.png" alt="">
+            
+        </div>
+
+        <div class="weatherweekly card my-card shadow p-3 mb-5 rounded">
+            <h1 id="carddate3" class="weatherheads">Jan 3</h1>
+            <h2 id="cardweather3" class="regulartext">13°C</h2>
+            <img class="imgs" src="https://symbols.getvecta.com/stencil_211/42_sun-behind-cloud.1e88e4ec8a.png" alt="">
+            
+        </div>
+
+        <div class="weatherweekly card my-card shadow p-3 mb-5 rounded">
+            <h1 id="carddate4" class="weatherheads">Jan 4</h1>
+            <h2 id="cardweather4" class="regulartext">13°C</h2>
+            <img class="imgs" src="https://symbols.getvecta.com/stencil_211/42_sun-behind-cloud.1e88e4ec8a.png" alt="">
+            
+        </div>
+
+        <div class="weatherweekly card my-card shadow p-3 mb-5 rounded">
+            <h1 id="carddate5" class="weatherheads">Jan 5</h1>
+            <h2 id="cardweather5" class="regulartext">13°C</h2>
+            <img class="imgs" src="https://symbols.getvecta.com/stencil_211/42_sun-behind-cloud.1e88e4ec8a.png" alt="">
+            
+        </div>
+            
+    </div>
+
+    <div class="centertable">
+        <table id="example" class="table table-striped table-hover" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Today</th>
+                    <th>Tomorrow</th>
+                    <th>2 days after</th>
+                    <th>3 days after</th>
+                    <th>4 days after</th>
+                    <th>5 days after</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="dateRow">
+                    <td id="date0">2024-04-28</td>
+                    <td id="date1">2024-04-29</td>
+                    <td id="date2">2024-04-30</td>
+                    <td id="date3">2024-05-01</td>
+                    <td id="date4">2024-05-02</td>
+                    <td id="date5">2024-05-03</td>
+                </tr>
+                <tr id="weatherRow">
+                    <td id="weather0">Mainly Cloudy</td>
+                    <td id="weather1">Light rain</td>
+                    <td id="weather2">Cloudy with sunny breaks</td>
+                    <td id="weather3">A mix of sun and clouds</td>
+                    <td id="weather4">Cloudy with showers</td>
+                    <td id="weather5">Mainly cloudy</td>
+                </tr>
+                <tr id="tempRow">
+
+                    <td id="temp0">10°C</td>
+                    <td id="temp1">20°C</td>
+                    <td id="temp2">10°C</td>
+                    <td id="temp3">20°C</td>
+                    <td id="temp4">10°C</td>
+                    <td id="temp5">20°C</td>
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!--
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Weather Options
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div> 
+-->
+<div>
+    <ul></ul>
+</div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
