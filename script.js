@@ -6,8 +6,7 @@ fetch(apiUrl)
         const dates = data.daily.time;
         const maxTemps = data.daily.temperature_2m_max;
         const minTemps = data.daily.temperature_2m_min;
-        const weatherCodes = data.daily.weather_code; // Will use function that will convert the codes into descriptions
-        
+        const weatherCodes = data.daily.weather_code; // Will use function that will convert the codes into descriptions 
 
         dates.forEach((date, index) => {
             
@@ -16,21 +15,17 @@ fetch(apiUrl)
             //WeatherCard information
             document.getElementById(`carddate${index}`).textContent = dat.toDateString().slice(4,10)
             document.getElementById(`cardweather${index}`).textContent = `${minTemps[index]}°C / ${maxTemps[index]}°C`;
-        
-
+            
             //Table information
             document.getElementById(`date${index}`).textContent = date; //getElementById searches for the element which has the id of that and that textcontent is changed to the information date.
             document.getElementById(`temp${index}`).textContent = `${minTemps[index]}°C / ${maxTemps[index]}°C`;
             document.getElementById(`weather${index}`).textContent = convertWeatherCodeToText(weatherCodes[index]); // Implement this function based on your needs
-
-            
         });
         
         
         // '2024-03-21'
     })
     .catch(error => console.log('Error fetching data:', error));
-
 
 function convertWeatherCodeToText(code) {
     // Converting weather code to human-readable text
